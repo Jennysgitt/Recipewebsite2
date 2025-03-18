@@ -19,6 +19,24 @@
             cursor: pointer;
             text-decoration: underline white;
         }
+        .overlay{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.8);
+            opacity: 0;
+            transition: opacity 0.5s ease;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .overlay-text{
+            color: white;
+            font-size: 2px;
+            text-align: center;
+        }
     </style>
     <link rel="shortcut icon" href="img/rcon.png" type="image/x-icon">
 </head>
@@ -106,9 +124,9 @@
                         <a href="/">
                             <div class="card rounded-edges">
                                 <div class="card-image">
-                                    <img src="img/cake-main.jpg" alt="cake" class="responsive-img rounded-edges">
+                                    <img src="img/chicken-main.jpg" alt="chicken" class="responsive-img rounded-edges">
                                     <div class="overlay">
-                                        <div class="overlay-text">Cakes
+                                        <div class="overlay-text">Chicken
                                             <i class="material-icons white-text" style="transform: rotate(-45deg);" >arrow_forward</i>
                                         </div>
                                     </div>
@@ -120,9 +138,9 @@
                         <a href="/">
                             <div class="card rounded-edges">
                                 <div class="card-image">
-                                    <img src="img/cake-main.jpg" alt="cake" class="responsive-img rounded-edges">
+                                    <img src="img/soup-main.jpg" alt="soup" class="responsive-img rounded-edges">
                                     <div class="overlay">
-                                        <div class="overlay-text">Cakes
+                                        <div class="overlay-text">Soup
                                             <i class="material-icons white-text" style="transform: rotate(-45deg);" >arrow_forward</i>
                                         </div>
                                     </div>
