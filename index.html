@@ -8,10 +8,6 @@
     <!-- link icons -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <style>
-        .btn{
-            border-radius: 10px;
-            
-        }
         /* style for hover effect on the cards */
         .card-image:hover .overlay{
             border-radius: 10px;
@@ -59,6 +55,17 @@
         .gradient-bg{
             background: linear-gradient(to bottom, #ffffff, #e65100);
         }
+
+        .btn {
+            border-radius: 10px;
+            background-color: #4CAF50;
+            color: white;
+            transition: transform 0.3s ease; /* Smooth transition */
+        }
+
+        .btn:hover:hover {
+            transform: scale(1.1); /* Slightly scale the button */
+        }
     </style>
     <link rel="shortcut icon" href="img/rcon.png" type="image/x-icon">
 </head>
@@ -68,7 +75,7 @@
         <div class="navbar-fixed">
             <nav class="white ">
                 <div class="container">
-                    <a href="/index.html" class="brand-logo">
+                    <a href="index.html" class="brand-logo">
                         <img src="img/logo.png" alt="main logo" width="150px" class="hide-on-med-and-down">
                         <img src="img/logo.png" alt="main logo" width="75%" class="hide-on-large-only">
                     </a>
@@ -91,7 +98,7 @@
             <video src="img/header-bg-vid.mp4" class="responsive-video" width="100%" alt=""></video>
             <div class="video-overlay">
                 <div class="hide-on-med-and-down white-text">
-                    <h1 class="white-text">Every Dish Tells A Story  </h1>
+                    <h2 class="white-text">Every Dish Tells A Story  </h2>
                     <h4>Explore,cook,and eat with.</h4>
                     <a href="" class="btn btn-flat orange darken-4 white-text rounded-edges"> GET STARTED</a>
                 </div>
@@ -131,7 +138,7 @@
         </section>
         <section>
             <div class="container">
-                <h2>Select a</h2> <h2 class="orange-text text-darken-4">category</h2>
+                <h2 class="heading"><span style="color: #000000;"> Select a</span> <span style="color: #E25822;">category</span></h2>
                 <div class="row">
                     <div class="col s12 m4 l4">
                         <a href="/">
@@ -186,8 +193,9 @@
                         </div>
                         <div class="col s12 m6 l6">
                                 <div class="card-content">
-                                    <h2 class="title text-darken-4">Crafted by culinary wizards</h2>
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium doloribus natus blanditiis ipsa quod exercitationem in tempore facere neque alias?</p>
+                                    <h2 class="heading"><span style="color: #000000;"> Crafted by culinary</span> <span style="color: #880e4f;">Wizards</span></h2> 
+                                    
+                                    <p>Discover a world a flavourful options that promise mouthwatering results, mticulously curated and perfected by culinary experts, all at your fingertips. Easy as pie, isn't it?</p>
                                 </div>
                                 <div class="card-action">
                                     <a href="" class="btn btn-flat pink darken-4 white-text">Start your Journey</a>
@@ -195,21 +203,22 @@
                         </div>
                     </div>
                 </div>
-            </section>  
+            </section> 
+            
         <section class="black">
             <div class="container">
                 <div class="row">
-                        <h2 class="orange-text text-darken-4 center-align">see our numbers</h2>
+                    <h3 class="heading center-align"><span style=" color:white;">see our</span> <span style="color: #E25822;">numbers </span> </h3>                         
                         <div class="col s12 m4 l4">
-                            <h1 class="white-text">27k+</h1>
+                            <h2 class="white-text">27k+</h2>
                             <h4 class="orange-text text-darken-4">active users each month</h4>
                         </div>
                         <div class="col s12 m4 l4">
-                            <h1 class="white-text">800</h1>
-                                <h4 class="orange-text text-darken-4">+available recipes till date</h4>
+                            <h2 class="white-text">800+</h2>
+                                <h4 class="orange-text text-darken-4">available recipes till date</h4>
                         </div>
                         <div class="col s12 m4">
-                            <h1 class="white-text">30+</h1>
+                            <h2 class="white-text">30+</h2>
                                 <h4 class="orange-text text-darken-4">chefs for consultation</h4>
                         </div>                    
                 </div>
@@ -217,8 +226,8 @@
         </section>
     <section>
         <div class="container">
-            <h1 id="meet" class="center-align"> Meet the Experts</h1>
-            <span>Our team of seasoned chefs offer expert guidance and delectable recipes to elevate your dishes to new heights.</span>            
+        <h2 class="heading"><span style="color: #000000;"> Meet the</span> <span style="color: #E25822;        ">experts</span></h2>        
+        <span>Our team of seasoned chefs offer expert guidance and delectable recipes to elevate your dishes to new heights.</span>            
                 <div class= "row">
                     <div class="col s12 m4 l4">
                         <img src="img/expert-1.jpg" alt="" class="responsive-img">
@@ -235,7 +244,7 @@
                 </div><hr>
             </div>
             <div class="container">
-            <h1 class="center-align">Our Esteemed Cliente</h1>        
+                <h2 class="center-align"><span style="color: #000000;"> Our Esteemed</span> <span style="color: #E25822;">Clients</span></h2>       
             <div class= "row">
                 <div class="col s12 m2 l2">
                     <img src="img/rest-1.avif" alt="" class="responsive-img">
