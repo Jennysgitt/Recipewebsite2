@@ -19,6 +19,15 @@
             cursor: pointer;
             text-decoration: underline white;
         }
+
+        .video-overlay{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+        } 
+
         .overlay{
             position: absolute;
             top: 0;
@@ -32,10 +41,23 @@
             justify-content: center;
             align-items: center;
         }
+
         .overlay-text{
             color: white;
             font-size: 2px;
             text-align: center;
+        }
+
+        .rounded-edges{
+            border-radius: 10px !important;
+        }
+
+        .card-image:hover .overlay{
+            border-radius: 10px;
+        }
+
+        .gradient-bg{
+            background: linear-gradient(to bottom, #ffffff, #e65100);
         }
     </style>
     <link rel="shortcut icon" href="img/rcon.png" type="image/x-icon">
@@ -65,12 +87,17 @@
                 </div>                
             </nav>
         </div>
-        <div class="video-container">
-            <ul class="vid">
-                <li> <video src="img/header-bg-vid.mp4" class="responsive-video" alt=""><h1>Every Dish Tells A Story <br>Explore,cook,and eat with.</h1></video>
-                </li>
-            </ul>
+        <div class="video-container hide-on-med-and-down" id="video">
+            <video src="img/header-bg-vid.mp4" class="responsive-video" width="100%" alt=""></video>
+            <div class="video-overlay">
+                <div class="hide-on-med-and-down white-text">
+                    <h1 class="white-text">Every Dish Tells A Story  </h1>
+                    <h4>Explore,cook,and eat with.</h4>
+                    <a href="" class="btn btn-flat orange darken-4 white-text rounded-edges"> GET STARTED</a>
+                </div>
+            </div>
         </div>
+
         <!-- sidenav for mobile device -->
         <div class="sidenav" id="mobile-nav">
             <ul>
@@ -109,7 +136,7 @@
                     <div class="col s12 m4 l4">
                         <a href="/">
                             <div class="card rounded-edges">
-                                <div class="card-image">
+                                <div class="card-image rounded-edges">
                                     <img src="img/cake-main.jpg" alt="cake" class="responsive-img rounded-edges">
                                     <div class="overlay">
                                         <div class="overlay-text">Cakes
@@ -123,7 +150,7 @@
                     <div class="col s12 m4 l4">
                         <a href="/">
                             <div class="card rounded-edges">
-                                <div class="card-image">
+                                <div class="card-image rounded-edges">
                                     <img src="img/chicken-main.jpg" alt="chicken" class="responsive-img rounded-edges">
                                     <div class="overlay">
                                         <div class="overlay-text">Chicken
@@ -137,7 +164,7 @@
                     <div class="col s12 m4 l4">
                         <a href="/">
                             <div class="card rounded-edges">
-                                <div class="card-image">
+                                <div class="card-image rounded-edges">
                                     <img src="img/soup-main.jpg" alt="soup" class="responsive-img rounded-edges">
                                     <div class="overlay">
                                         <div class="overlay-text">Soup
@@ -232,9 +259,9 @@
             <hr>
         </div>
     </section>
-        </main>
+    </main>
         <footer>
-            <div class="container">
+            <div class="gradient-bg">
                 <div class="row">
                         <div class="col s12 m3 l3">
                             <h4 class="orange-text text-darken-4">About</h4>
@@ -266,13 +293,11 @@
                             +2349024364876 <br>
                             customersupport@recipe.com                    
                         </div>                    
+                </div> 
+                <div class="white-text center-align">
+                    &copy 2025 Recipe.com.<a href="https://github.com/Jennysgitt" class="white-text">All rights reserved</a>           
                 </div>
-            </div>      
-            <div class="footer-copyright orange darken-4 center-align">
-                <div class="container white-text">
-                    &copy 2025 Recipe.com| <a href="https://github.com/Jennysgitt" class="white-text">All rights reserved</a>           
-                </div>
-            </div>
+            </div> 
         </footer>
 </body>
 </html>
