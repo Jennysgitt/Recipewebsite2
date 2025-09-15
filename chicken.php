@@ -17,20 +17,19 @@ $recipes = mysqli_fetch_all($send_query, MYSQLI_ASSOC);
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Cakes</title>
+  <title>Chicken</title>
   <link rel="stylesheet" href="css/materialize.css">
-    <!-- link icons -->
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <style>       
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
-
-html{
-        font-family: "Josefin Sans", sans-serif !important;
+  <!-- link icons -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <style>    
+    @import url('https://fonts.googleapis.com/css2?family=Oregano:ital@0;1&display=swap');
+        html {
+        font-family: "Oregano", cursive;
+        font-weight: 400;
         font-style: normal;
       }
-     
-    </style>
-  </head>
+  </style>
+</head>
 <body>
   <div class="parallax-container">
     <div class="parallax"><img src="img/chicken-main.jpg"></div>
@@ -38,7 +37,7 @@ html{
   
         <!-- chicken -->
         <div class="container">
-        <h1 id="cakes" class="cake orange-text text-darken-4">Chicken</h1>
+        <h1 id="chicken" class="chicken orange-text text-darken-4">Chicken</h1>
         <p class="flow-text">Our chicken dishes are a cut above the rest, with tender, juicy meat and flavors that will make your taste buds dance. From classic comfort food like crispy fried chicken and creamy chicken pasta, to international inspirations and spicy twists, our chicken menu has something for everyone. Our chefs use only the freshest, highest-quality chicken, cooked to perfection to bring out the full flavor and texture. Whether you're in the mood for a satisfying meal or a quick bite, our chicken dishes are sure to hit the spot. Browse our menu to explore our finger-lickin' good chicken options!.</p>
         </div>
         <!-- card section -->
@@ -48,9 +47,9 @@ html{
                 <div class="row">
                      <?php foreach ($recipes as $recipe) { ?>
                     <div class="col s12 m6 l4"> 
-                        <div class="card large hoverable">
+                        <div class="card medium hoverable">
                             <div class="card-image">
-                                <img src="img/spagetti.png" class="responsive-img materialboxed" alt="">
+                                <img src="img/chicken-main.jpg" class="responsive-img materialboxed" alt="chicken">
                             </div>
                             <div class="card-content">
                                 <span class="card-title activator orange-text text-darken-4"><strong><?php echo $recipe ['recipe_name'] ?> </strong></span>

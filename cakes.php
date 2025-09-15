@@ -21,19 +21,18 @@ $recipes = mysqli_fetch_all($send_query, MYSQLI_ASSOC);
   <link rel="stylesheet" href="css/materialize.css">
     <!-- link icons -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <style>       
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
-
-html{
-        font-family: "Josefin Sans", sans-serif !important;
+  <style>    
+  @import url('https://fonts.googleapis.com/css2?family=Oregano:ital@0;1&display=swap');
+        html {
+        font-family: "Oregano", cursive;
+        font-weight: 400;
         font-style: normal;
       }
-      
-    </style>
+</style>
   </head>
 <body>
   <div class="parallax-container">
-    <div class="parallax"><img src="img/cake.jpg"></div>
+    <div class="parallax"><img src="img/cake-main.jpg"></div>
   </div>
   
         <!-- cake -->
@@ -50,7 +49,7 @@ html{
                     <div class="col s12 m6 l4"> 
                         <div class="card hoverable">
                             <div class="card-image">
-                                <img src="img/sponge_cake.webp" class="responsive-img materialboxed" alt="">
+                                <img src="img/cake-main.jpg" class="responsive-img materialboxed" alt="cakes">
                             </div>
                             <div class="card-content">
                                 <span class="card-title activator orange-text text-darken-4"><strong><?php echo $recipe ['recipe_name'] ?> </strong></span>
@@ -71,10 +70,10 @@ html{
 
   <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-  <!-- <script>
+  <script>
     $(document).ready(function(){
-    $('.modal').modal();
+    $('.parallax').parallax();
   });
-  </script> -->
+  </script>
 </body>
 </html>
