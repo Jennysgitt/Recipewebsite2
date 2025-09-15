@@ -157,7 +157,7 @@
                 <h2 class="heading center-align"><span style="color: #000000;"> Select a</span> <span style="color: #E25822;">category</span></h2>
                 <div class="row">
                     <div class="col s12 m4 l4">
-                        <a href="/">
+                        <a href="cakes.php">
                             <div class="card rounded-edges">
                                 <div class="card-image rounded-edges">
                                     <img src="img/cake-main.jpg" alt="cake" class="responsive-img rounded-edges">

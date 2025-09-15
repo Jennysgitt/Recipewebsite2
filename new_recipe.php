@@ -40,7 +40,22 @@ if(isset($_POST['submit'])){
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <title>Add Recipe</title>
+  <title>New Recipe</title>
+  <style>
+    /* to change the color of the label in the form in contacts */
+    label {
+    color: #e65100 !important;
+    }
+    /* label underline focus color */
+    input:focus, textarea {
+    border-bottom: 1px solid #e65100 !important;
+    box-shadow: 0 1px 0 0 #e65100 !important;
+    }
+    /* Make all dropdown items orange */
+.dropdown-content li > span {
+  color: #e65100 !important; /* orange darken-4 */
+}
+  </style>
 </head>
 <body> 
     <section class="section container">
@@ -50,7 +65,7 @@ if(isset($_POST['submit'])){
           <br>
           
           <br>
-          <form action="add_recipe.php" method="post">
+          <form action="new_recipe.php" method="post">
             <div class="row">
               <div class="col s12 l8 input-field">
                 <label for="recipe_name">Recipe Name</label>
