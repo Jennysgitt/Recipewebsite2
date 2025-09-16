@@ -171,7 +171,7 @@
                         </a>
                     </div>
                     <div class="col s12 m4 l4">
-                        <a href="/">
+                        <a href="chicken.php">
                             <div class="card rounded-edges">
                                 <div class="card-image rounded-edges">
                                     <img src="img/chicken-main.jpg" alt="chicken" class="responsive-img rounded-edges">
@@ -185,7 +185,7 @@
                         </a>         
                     </div>
                     <div class="col s12 m4 l4">
-                        <a href="/">
+                        <a href="soups.php">
                             <div class="card rounded-edges">
                                 <div class="card-image rounded-edges">
                                     <img src="img/soup-main.jpg" alt="soup" class="responsive-img rounded-edges">

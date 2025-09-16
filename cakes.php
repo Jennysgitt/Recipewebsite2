@@ -28,6 +28,10 @@ $recipes = mysqli_fetch_all($send_query, MYSQLI_ASSOC);
         font-weight: 400;
         font-style: normal;
       }
+
+      .underline-text {
+        text-decoration: underline !important;
+      }
 </style>
   </head>
 <body>
@@ -37,33 +41,62 @@ $recipes = mysqli_fetch_all($send_query, MYSQLI_ASSOC);
   
         <!-- cake -->
         <div class="container">
-        <h1 id="cakes" class="cake orange-text text-darken-4">Cakes</h1>
+        <h1 id="cakes" class="cake blue-text text-darken-4">Cakes</h1>
         <p class="flow-text">Indulge your sweet tooth with our decadent cake selection! We're thrilled to introduce our new cake menu, featuring an array of mouth-watering treats to satisfy any craving. From classic vanilla and rich chocolate to creative flavor combinations and show-stopping designs, our cakes are crafted with love and care to provide the perfect ending to your meal. Whether you're celebrating a special occasion or simply treating yourself, our cakes are sure to delight. Browse our menu to explore our signature cake flavors and order your favorite today!.</p>
         </div>
         <!-- card section -->
         <section class="section">
             <div class="container">
-                <h3 class="orange-text text-darken-4 center"> Cakes </h3>
+                <h3 class="blue-text text-darken-4 center"> Cakes </h3>
                 <div class="row">
                      <?php foreach ($recipes as $recipe) { ?>
                     <div class="col s12 m6 l4"> 
-                        <div class="card hoverable">
+                        <div class="card medium hoverable">
                             <div class="card-image">
-                                <img src="img/cake-main.jpg" class="responsive-img materialboxed" alt="cakes">
+                                <img src="img/cake-main.jpg" class="responsive-img" alt="cakes">
                             </div>
                             <div class="card-content">
-                                <span class="card-title activator orange-text text-darken-4"><strong><?php echo $recipe ['recipe_name'] ?> </strong></span>
-                                <p class=""> Light as air, a golden delight,
-                                    Soft and fluffy, a simple bite.</p>
+                                <span class="card-title underline-text blue-text text-darken-4">
+                                  <strong>
+                                    <a href="details.php?recipe_id=<?php echo $recipe['recipe_id'] ?>"
+                                      class="blue-text text-darken-4"><?php echo $recipe ['recipe_name'] ?>
+                                    </a>
+                                  </strong>
+                                </span>
+                                <p class=""> <?php echo $recipe ['description'] ?> </p>
                             </div>
                             <div class="card-action center-align">
-                                <a href="" class="orange-text text-darken-4">INGREDIENTS</a>
-                                <a href="" class="orange-text text-darken-4">BAKE NOW</a>
+                                <span class="blue-text text-darken-4 activator left" style="cursor: pointer;">INGREDIENTS</span>
+                                <a 
+                                  href="https://www.youtube.com/results?search_query=<?php echo 'How to Prepare '. $recipe ['recipe_name'] ?>"
+                                  target="_blank"
+                                  class="blue-text text-darken-4">
+                                  BAKE NOW
+                                </a>
                             </div>
+                            <div class="card-reveal">
+                              <span class="card-title blue-text text-darken-4">Ingredients<i class="material-icons right">close</i></span>
+                              <p><?php echo $recipe['ingredients'] ?></p>
+                           </div>
                         </div>
                     </div>
                     <?php };?>
                 </div> 
+            </div>
+            <div class="container">
+            <div class="center">
+                <button data-target="nav" class="btn modal-trigger blue blue-darken-4">See more recipes</button>
+            </div>
+
+            <div id="nav" class="modal">
+              <div class="container">
+                <ul>
+                  <li> <a href="cakes.php">Cakes</a></li>
+                  <li> <a href="soups.php">Soups</a></li>
+                  <li> <a href="chicken.php">Chicken</a></li>
+                </ul>
+              </div>
+            </div>
             </div>
         </section>
 
@@ -73,6 +106,7 @@ $recipes = mysqli_fetch_all($send_query, MYSQLI_ASSOC);
   <script>
     $(document).ready(function(){
     $('.parallax').parallax();
+    $('.modal').modal();
   });
   </script>
 </body>
