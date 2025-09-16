@@ -97,7 +97,7 @@
                     <!-- to hide on phone and tablet so for laptops-->
                     <ul class="right hide-on-med-and-down">
                         <li><a class="orange-text text-darken-4" href="#whoweare">Who We Are</a></li>
-                        <li><a class="orange-text text-darken-4" href="#recipes">Find a Recipe</a></li>
+                        <li><a class="orange-text text-darken-4" href="recipes.php">Find a Recipe</a></li>
                         <li><a class="orange-text text-darken-4" href="#reviews">Our Reviews</a></li>
                         <li><a class="orange-text text-darken-4" href="#contact">Contact Us</a></li>
                         <li><button class="btn orange darken-4 white-text">Login</button></li>

@@ -46,12 +46,24 @@ if(isset($_POST['delete'])){
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Delete </title>
+  <link rel="stylesheet" href="css/materialize.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 <body>
-  <h1>Are you sure you want to delete  <?php  echo($recipe['recipe_name'])?>?</h1>
+  <div class="center-align">
+  <h1>Are you sure you want to delete <?php  echo($recipe['recipe_name'])?>?</h1>
   <form action="delete.php" method="post">
-    <input type="text" name="delete_id" value=" <?php echo($recipe['recipe_id'])?>">
-    <input type="submit" value="delete" name="delete">
+    <!-- <input type="text" name="delete_id" value=" <?php echo($recipe['recipe_id'])?>"> -->
+    <!-- <input type="submit" value="delete" name="delete"> -->
+    <a class="btn btn-large btn-flat white-text blue darken-4" href="recipes.php">
+      <i class="material-icons tiny left">keyboard_arrow_left</i>
+      <span>Back</span>
+    </a>
+    <a class="btn btn-large btn-flat white-text red darken-4" href="delete.php?recipe_id=<?php echo($recipe['recipe_id'])?>">
+      <i class="material-icons tiny right">delete_forever</i>
+      <span>Delete</span>
+    </a>
   </form>
+    </div>
 </body>
 </html>

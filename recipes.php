@@ -25,6 +25,14 @@ $recipes = mysqli_fetch_all($send_query, MYSQLI_ASSOC);
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <title>Recipes</title>
+  <style>  
+  @import url('https://fonts.googleapis.com/css2?family=Oregano:ital@0;1&display=swap');
+        html {
+        font-family: "Oregano", cursive;
+        font-weight: 400;
+        font-style: normal;
+      }
+  </style>
 </head>
 <body>
   <div class="container">

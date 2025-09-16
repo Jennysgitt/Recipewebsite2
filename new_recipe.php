@@ -41,20 +41,27 @@ if(isset($_POST['submit'])){
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <title>New Recipe</title>
-  <style>
-    /* to change the color of the label in the form in contacts */
-    label {
-    color: #e65100 !important;
-    }
-    /* label underline focus color */
-    input:focus, textarea {
-    border-bottom: 1px solid #e65100 !important;
-    box-shadow: 0 1px 0 0 #e65100 !important;
-    }
-    /* Make all dropdown items orange */
-.dropdown-content li > span {
-  color: #e65100 !important; /* orange darken-4 */
-}
+  <style>  
+  @import url('https://fonts.googleapis.com/css2?family=Oregano:ital@0;1&display=swap');
+        html {
+        font-family: "Oregano", cursive;
+        font-weight: 400;
+        font-style: normal;
+      }
+      /* to change the color of the label in the form in contacts */
+      label {
+        color: #e65100 !important;
+      }
+      /* label underline focus color */
+      input:focus, textarea {
+        border-bottom: 1px solid #e65100 !important;
+        box-shadow: 0 1px 0 0 #e65100 !important;
+  }
+  /* Make all dropdown items orange */
+      .dropdown-content li > span {
+        color: #e65100 !important; /* orange darken-4 */
+  }
+
   </style>
 </head>
 <body> 
