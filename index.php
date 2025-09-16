@@ -138,7 +138,7 @@
                                 <p class="flow-text">We offer you a gateway to an expertly curated selection of global recipes, ranging from traditional dishes to innovative creations, spanning various cuisines and cooking techniques.</p>
                             </div>
                             <div class="card-action">
-                                <a href="" class="btn btn-flat orange darken-4 white-text">START YOUR JOURNEY</a>
+                                <a href="recipes.php" class="btn btn-flat orange darken-4 white-text">START YOUR JOURNEY</a>
                             </div>
                     </div>
                         <div class="col s12 m6 l6"> 
@@ -216,7 +216,7 @@
                                     <p>Discover a world a flavourful options that promise mouthwatering results, mticulously curated and perfected by culinary experts, all at your fingertips. Easy as pie, isn't it?</p>
                                 </div>
                                 <div class="card-action">
-                                    <a href="" class="btn btn-flat pink darken-4 white-text">START COOKING</a>
+                                    <a href="https://www.youtube.com/results?search_query=recipes" class="btn btn-flat pink darken-4 white-text">START COOKING</a>
                                 </div>
                         </div>
                     </div>
@@ -247,16 +247,95 @@
             <br>
             <br>
         </section>
-    <section>
+
+        <section>
         <div class="container">
-        <h2 class="heading"><span style="color: #000000;"> Meet the</span> <span style="color: #E25822;        ">experts</span></h2>        
-        <span  style="display: block; margin-bottom: 20px;">Our team of seasoned chefs offer expert guidance and delectable recipes to elevate your dishes to new heights.</span>  
+        <h2 class="heading">
+            <span style="color: #000000;"> Meet the</span> 
+            <span style="color: #E25822;">experts</span></h2>        
+        <span  style="display: block; margin-bottom: 20px;">Our team of seasoned chefs offer expert guidance and delectable recipes to elevate your dishes to new heights.
+        </span>  
+
+            <ul id="dropdown-liam" class="dropdown-content">
+            <li><a href="#!" class="orange-text text-darken-4">Chef Liam</a></li>
+            <li>
+                <span style="display:block; padding:10px; color:#000000;">
+                Liam Hamish is a pastry artisan renowned for his delicate touch and artistic flair. 
+                Known for his mastery of textures, he balances soft sponges, silky creams, and rich ganaches to perfection. 
+                Liam’s philosophy: a cake should be an edible piece of art that tells a story with every bite.
+                </span>
+            </li>
+            </ul>
+
+            <ul id="dropdown-marcus" class="dropdown-content">
+            <li><a href="#!" class="orange-text text-darken-4">Chef Marcus</a></li>
+            <li>
+                <span style="display:block; padding:10px;color:#000000;">
+                Marcus has built his culinary career around reimagining one of the world’s most versatile proteins: chicken. 
+                From smoky barbecue wings to herb-stuffed roasts and globally inspired curries, his dishes celebrate the bird’s adaptability. 
+                His marinades and slow-cooking methods transform even the simplest cut into a flavorful masterpiece.
+                </span>
+            </li>
+            </ul>
+
+            <ul id="dropdown-hana" class="dropdown-content">
+            <li><a href="#!" class="orange-text text-darken-4">Chef Hana</a></li>
+            <li>
+                <span style="display:block; padding:10px;color:#000000;">
+                Hana is celebrated for her soul-warming soups, drawing inspiration from rustic traditions and modern wellness cuisine. 
+                From hearty beef stews to delicate miso broths, her soups highlight depth of flavor and comfort. 
+                She believes soups are “the hug of the culinary world,” nourishing both body and soul.
+                </span>
+            </li>
+            </ul>
+
+            <div class="row center-align">
+            <!-- Chef Liam -->
+            <div class="col s12 m4 l4">
+                <img src="img/expert-1.jpg" alt="Chef Liam" class="responsive-img z-depth-2">
+                <h5 class="heading">
+                <span style="color: #000000;">Liam</span> 
+                <span style="color: rgba(226, 88, 34, 1);">Hamish</span>
+                <!-- Dropdown Trigger (icon) -->
+                <a class="dropdown-trigger" href="#" data-target="dropdown-liam">
+                    <i class="material-icons orange-text text-darken-4">more_vert</i>
+                </a>
+                </h5>
+            </div>
+
+            <!-- Chef Marcus -->
+            <div class="col s12 m4 l4">
+                <img src="img/expert-2.jpg" alt="Chef Marcus" class="responsive-img z-depth-2">
+                <h5 class="heading">
+                <span style="color: #000000;">Marcus</span> 
+                <span style="color: rgba(226, 88, 34, 1);">James</span>
+                <!-- Dropdown Trigger (icon) -->
+                <a class="dropdown-trigger" href="#" data-target="dropdown-marcus">
+                    <i class="material-icons orange-text text-darken-4">more_vert</i>
+                </a>
+                </h5>
+            </div>
+
+            <!-- Chef Hana -->
+            <div class="col s12 m4 l4">
+                <img src="img/expert-3.jpg" alt="Chef Hana" class="responsive-img z-depth-2">
+                <h5 class="heading">
+                <span style="color: #000000;">Hana</span> 
+                <span style="color: rgba(226, 88, 34, 1);">Lee</span>
+                <!-- Dropdown Trigger (icon) -->
+                <a class="dropdown-trigger" href="#" data-target="dropdown-hana">
+                    <i class="material-icons orange-text text-darken-4">more_vert</i>
+                </a>
+                </h5>
+            </div>
+
+            </div>
         
-                <div class= "row">
+                <!-- <div class= "row">                                        
                     <div class="col s12 m4 l4">
-                        <img src="img/expert-1.jpg" alt="" class="responsive-img">
-                        <h5 class="heading"><span style="color: #000000;"> Liam</span> <span style="color: #E25822; ">Hamish</span></h5>
-                    </div>                      
+                        <img src="img/expert-2.jpg" alt="" class="responsive-img">
+                        <h5 class="heading"><span style="color: #000000;"> Liam</span> <span style="color: #E25822; ">Hamish</span></h5>                        
+                    </div>      
                     <div class="col s12 m4 l4">
                         <img src="img/expert-2.jpg" alt="" class="responsive-img">
                         <h5 class="heading"><span style="color: #000000;"> Alejandro</span> <span style="color: #E25822; ">Mateo</span></h5>                        
@@ -268,7 +347,7 @@
                 </div>
                 <br><br>
                 <hr>
-            </div>
+            </div> -->
 
             <div class="section">
                 <h2 class="center-align"><span style="color: #000000;"> Our Esteemed</span> <span style="color: #E25822;">Clients</span></h2>       
@@ -300,8 +379,8 @@
         <br>
     </section>
     </main>
-        <footer>
-            <div class="gradient-bg">
+        <footer class="gradient-bg">
+            <div>
                 <div class="row">
                         <div class="col s12 m3 l3">
                             <h4 class="orange-text text-darken-4">About</h4>
@@ -339,5 +418,16 @@
                 </div>
             </div> 
         </footer>
+        <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script>
+  document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.dropdown-trigger');
+    M.Dropdown.init(elems, {
+      coverTrigger: false, // dropdown appears below icon
+      constrainWidth: false // allows full text width
+    });
+  });
+</script>
 </body>
 </html>

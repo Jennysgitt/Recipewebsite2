@@ -28,7 +28,10 @@ $recipes = mysqli_fetch_all($send_query, MYSQLI_ASSOC);
         font-weight: 400;
         font-style: normal;
       }
-</style>
+       .underline-text {
+        text-decoration: underline !important;
+      }
+    </style>
   </head>
 <body>
   <div class="parallax-container">
@@ -49,23 +52,31 @@ $recipes = mysqli_fetch_all($send_query, MYSQLI_ASSOC);
                     <div class="col s12 m6 l4"> 
                         <div class="card medium hoverable">
                             <div class="card-image">
-                                <img src="img/soup-main.jpg" class="responsive-img materialboxed" alt="soups">
+                                <img src="img/soup-main.jpg" class="responsive-img" alt="soups">
                             </div>
                             <div class="card-content">
-                                <span class="card-title underline-text blue-text text-darken-4">
+                                <span class="card-title underline-text red-text text-darken-4">
                                   <strong>
                                     <a href="details.php?recipe_id=<?php echo $recipe['recipe_id'] ?>"
-                                      class="blue-text text-darken-4"><?php echo $recipe ['recipe_name'] ?>
+                                      class="red-text text-darken-4"><?php echo $recipe ['recipe_name'] ?>
                                     </a>
                                   </strong>
-                                </span>
-                                
+                                </span>                                
                                 <p class=""><?php echo $recipe ['description'] ?> </p>
                             </div>
                             <div class="card-action center-align">
-                                <a href="" class="red-text text-darken-4">INGREDIENTS</a>
-                                <a href="" class="red-text text-darken-4">COOK</a>
+                             <span class="red-text text-darken-4 activator left" style="cursor: pointer;">INGREDIENTS</span>
+                                <a 
+                                  href="https://www.youtube.com/results?search_query=<?php echo 'How to Prepare '. $recipe ['recipe_name'] ?>"
+                                  target="_blank"
+                                  class="red-text text-darken-4">
+                                  COOK NOW
+                                </a>
                             </div>
+                            <div class="card-reveal">
+                              <span class="card-title red-text text-darken-4">Ingredients<i class="material-icons right">close</i></span>
+                              <p><?php echo $recipe['ingredients'] ?></p>
+                           </div>
                         </div>
                     </div>
                     <?php };?>

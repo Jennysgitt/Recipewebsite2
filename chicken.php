@@ -28,6 +28,9 @@ $recipes = mysqli_fetch_all($send_query, MYSQLI_ASSOC);
         font-weight: 400;
         font-style: normal;
       }
+       .underline-text {
+        text-decoration: underline !important;
+      }
   </style>
 </head>
 <body>
@@ -49,16 +52,31 @@ $recipes = mysqli_fetch_all($send_query, MYSQLI_ASSOC);
                     <div class="col s12 m6 l4"> 
                         <div class="card medium hoverable">
                             <div class="card-image">
-                                <img src="img/chicken-main.jpg" class="responsive-img materialboxed" alt="chicken">
+                                <img src="img/chicken-main.jpg" class="responsive-img" alt="chicken">
                             </div>
                             <div class="card-content">
-                                <span class="card-title activator green-text text-darken-4"><strong><?php echo $recipe ['recipe_name'] ?> </strong></span>
+                                <span class="card-title activator underline-text green-text text-darken-4">
+                                  <strong>
+                                    <a href="details.php?recipe_id=<?php echo $recipe['recipe_id'] ?>"
+                                      class="green-text text-darken-4"><?php echo $recipe ['recipe_name'] ?>
+                                    </a> 
+                                  </strong>
+                                </span>
                                 <p class=""><?php echo $recipe ['description'] ?> </p>
                             </div>
                             <div class="card-action center-align">
-                                <a href="" class="green-text text-darken-4">INGREDIENTS</a>
-                                <a href="" class="green-text text-darken-4">COOK NOW</a>
+                                <span class="green-text text-darken-4 activator left" style="cursor: pointer;">INGREDIENTS</span>
+                                <a 
+                                  href="https://www.youtube.com/results?search_query=<?php echo 'How to Prepare '. $recipe ['recipe_name'] ?>"
+                                  target="_blank"
+                                  class="green-text text-darken-4">
+                                  COOK NOW
+                                </a>
                             </div>
+                            <div class="card-reveal">
+                              <span class="card-title green-text text-darken-4">Ingredients<i class="material-icons right">close</i></span>
+                              <p><?php echo $recipe['ingredients'] ?></p>
+                           </div>
                         </div>
                     </div>
                     <?php };?>
