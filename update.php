@@ -4,7 +4,8 @@ include('connect.php');
 
 if(isset($_GET['recipe_id'])){
   $recipe_id = $_GET['recipe_id'];
-  $fetch_query = "SELECT * FROM recipes_tb WHERE recipe_id = '$recipe_id'";
+  $recipe_name = $_GET['recipe_name'];
+  $fetch_query = "SELECT * FROM recipes_tb WHERE recipe_name = '$recipe_name'";
 
   $send_query = mysqli_query($connect, $fetch_query);
 
@@ -29,7 +30,7 @@ if(isset($_POST['update'])){
   $send_update_query = mysqli_query($conn, $update_query);
 
   if($send_update_query){
-    header("Location: view_recipe.php?recipe_id=$update_id");
+    header("Location: recipe.php?recipe_id=$update_id");
   } else {
     echo 'Could not update' . mysqli_error($conn);
   }
@@ -65,7 +66,7 @@ if(isset($_POST['update'])){
     <div class="slider hide-on-med-and-down">
       <ul class="slides">
         <li>
-          <img src="assets/img/chef_writing.jpg" class="responsive-img" alt="">
+          <img src="img/chef-writing.jpg" class="responsive-img" alt="">
         </li>
       </ul>
     </div>

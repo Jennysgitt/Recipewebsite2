@@ -50,6 +50,9 @@ if(isset($_POST['delete'])){
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 <body>
+  <div class="parallax-container">
+    <div class="parallax"><img src="img/delete1.jpg"></div>
+  </div>
   <div class="center-align">
   <h1>Are you sure you want to delete <?php  echo($recipe['recipe_name'])?>?</h1>
   <form action="delete.php" method="post">
@@ -65,5 +68,12 @@ if(isset($_POST['delete'])){
     </a>
   </form>
     </div>
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+    $(document).ready(function(){
+    $('.parallax').parallax();
+    });
+    </script>
 </body>
 </html>

@@ -49,6 +49,9 @@
                 </div>
             </div>
         </div>
+    </section>
+    <br>
+    
         <footer class="gradient-bg">
           <div>
             <div class="row">
@@ -90,7 +93,6 @@
                 </div>
             </div> 
           </footer>
-        </section>
       </body>
       </html>
       

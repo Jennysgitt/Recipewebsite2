@@ -47,6 +47,9 @@ $primaryColor = $recipe['primary_color'];
             background-color: var(--primary-color) !important;
             color: white !important;
       }
+      .gradient-bg{
+            background: linear-gradient(to bottom, #ffffff, var(--primary-color));
+        }
     .gradient-bg{
             background-color: var(--primary-color) !important;
      }
@@ -114,10 +117,10 @@ $primaryColor = $recipe['primary_color'];
                         <div class="col s12 m3 l3">
                             <h4 class="white-text text-darken-4">Explore</h4>
                             <ul>
-                                <li> <a href="#recipes" class="black-text">Recipes</a></li>
-                                <li> <a href="#cakes" class="black-text"> Cake</a></li>
-                                <li> <a href="#soups" class="black-text"> Soups</a></li>
-                                <li> <a href="#chicken" class="black-text"> Chicken</a></li>
+                                <li> <a href="recipes.php" class="black-text">Recipes</a></li>
+                                <li> <a href="cakes.php" class="black-text"> Cake</a></li>
+                                <li> <a href="soups.php" class="black-text"> Soups</a></li>
+                                <li> <a href="chicken.php" class="black-text"> Chicken</a></li>
                             </ul>
                         </div>
                         <div class="col s12 m3 l3">
