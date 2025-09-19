@@ -60,6 +60,11 @@ if(isset($_POST['submit'])){
         .dropdown-content li > span {
         color: #e65100 !important; /* orange darken-4 */
         }
+        .btn{
+          font-family: "Oregano", cursive;
+          font-weight: 400;
+          font-style: normal;
+        }
   </style>
 </head>
 <body> 
