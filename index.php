@@ -8,12 +8,17 @@
     <!-- link icons -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <style>       
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap'); */
         
-        html{
-        font-family: "Josefin Sans", sans-serif !important;
+         @import url('https://fonts.googleapis.com/css2?family=Oregano:ital@0;1&display=swap');
+        html {
+        font-family: "Oregano", cursive;
+        font-weight: 400;
         font-style: normal;
-        }
+      }
+       .underline-text {
+        text-decoration: underline !important;
+      }
 /* style for hover effect on the cards */
         .card-image:hover .overlay{
             border-radius: 10px;
@@ -99,7 +104,7 @@
                         <li><a class="orange-text text-darken-4" href="#whoweare">Who We Are</a></li>
                         <li><a class="orange-text text-darken-4" href="recipes.php">Find a Recipe</a></li>
                         <li><a class="orange-text text-darken-4" href="#reviews">Our Reviews</a></li>
-                        <li><a class="orange-text text-darken-4" href="#contact">Contact Us</a></li>
+                        <li><a class="orange-text text-darken-4" href="contactus.php">Contact Us</a></li>
                         <li><button class="btn orange darken-4 white-text">Login</button></li>
                     </ul>
                 </div>                

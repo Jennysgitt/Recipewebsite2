@@ -34,6 +34,30 @@ $recipes = mysqli_fetch_all($send_query, MYSQLI_ASSOC);
       }
   </style>
 </head>
+<header>
+   <div class="navbar-fixed">
+            <nav class="white ">
+                <div class="container">
+                    <a href="index.html" class="brand-logo">
+                        <img src="img/logo.png" alt="main logo" width="150px" class="hide-on-med-and-down">
+                        <img src="img/logo.png" alt="main logo" width="75%" class="hide-on-large-only">
+                    </a>
+                    <!-- for sidenav to show only on mobile devices -->
+                    <a href="#mobile-nav" class="sidenav-trigger right">
+                        <i class="material-icons orange-text text-darken-4 hide-on-large-only">menu</i>
+                    </a>
+                    <!-- to hide on phone and tablet so for laptops-->
+                    <ul class="right hide-on-med-and-down">
+                        <li><a class="orange-text text-darken-4" href="index.php">Who We Are</a></li>
+                        <li><a class="orange-text text-darken-4" href="recipes.php">Find a Recipe</a></li>
+                        <li><a class="orange-text text-darken-4" href="#reviews">Our Reviews</a></li>
+                        <li><a class="orange-text text-darken-4" href="#contact">Contact Us</a></li>
+                        <li><button class="btn orange darken-4 white-text">Login</button></li>
+                    </ul>
+                </div>                
+            </nav>
+        </div>
+</header>
 <body>
   <div class="container">
     <h3 class="orange-text text-darken-4 center"> Recipes </h3>
