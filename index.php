@@ -96,8 +96,8 @@
                         <img src="img/logo.png" alt="main logo" width="75%" class="hide-on-large-only">
                     </a>
                     <!-- for sidenav to show only on mobile devices -->
-                    <a href="#mobile-nav" class="sidenav-trigger right">
-                        <i class="material-icons orange-text text-darken-4 hide-on-large-only">menu</i>
+                    <a href="#mobile-nav" class="sidenav-trigger right  hide-on-large-only">
+                        <i class="material-icons orange-text text-darken-4">menu</i>
                     </a>
                     <!-- to hide on phone and tablet so for laptops-->
                     <ul class="right hide-on-med-and-down">
@@ -122,14 +122,13 @@
         </div>
 
         <!-- sidenav for mobile device -->
-        <div class="sidenav" id="mobile-nav">
-            <ul>
+            <ul class="sidenav" id="mobile-nav">
                 <li><a class="orange-text text-darken-4" href="#whoweare">Who We Are</a></li>
                 <li><a class="orange-text text-darken-4" href="#recipes">Find a Recipe</a></li>
                 <li><a class="orange-text text-darken-4" href="#reviews">Our Reviews</a></li>
                 <li><a class="orange-text text-darken-4" href="#contact">Contact Us</a></li>
                 <li><button class="btn orange darken-4 white-text">Login</button></li>
-        </div>
+            </ul>
     </header> 
     <main>
         <br>
@@ -426,13 +425,10 @@
         <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
   <script>
-  document.addEventListener('DOMContentLoaded', function() {
-    var elems = document.querySelectorAll('.dropdown-trigger');
-    M.Dropdown.init(elems, {
-      coverTrigger: false, // dropdown appears below icon
-      constrainWidth: false // allows full text width
-    });
+    $(document).ready(function(){
+    $('.sidenav').sidenav();
   });
+
 </script>
 </body>
 </html>

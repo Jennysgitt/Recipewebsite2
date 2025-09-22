@@ -55,17 +55,18 @@ if(isset($_POST['delete'])){
   </div>
   <div class="center-align">
   <h1>Are you sure you want to delete <?php  echo($recipe['recipe_name'])?>?</h1>
-  <form action="delete.php" method="post">
+  <form action="delete2.php" method="post">
     <!-- <input type="text" name="delete_id" value=" <?php echo($recipe['recipe_id'])?>"> -->
-    <!-- <input type="submit" value="delete" name="delete"> -->
-      <a class="btn btn-large btn-flat white-text blue darken-4" href="recipes.php">
-        <i class="material-icons tiny left">keyboard_arrow_left</i>
-          <span>Back</span>
-      </a>
+    <a class="btn btn-large btn-flat white-text blue darken-4" href="recipes.php">
+      <i class="material-icons tiny left">keyboard_arrow_left</i>
+      <span>Back</span>
+    </a>
     <input type="hidden" name="delete_id" value="<?php echo $recipe['recipe_id']; ?>">
-    <input type="submit" class="btn btn-large btn-flat white-text red darken-4" value ="delete" name="delete" href="delete.php?recipe_id=<?php echo($recipe['recipe_id'])?>">
+
+    <input type="submit" value="delete" name="delete" class="btn">
+    
   </form>
-   </div>
+    </div>
     
     <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>

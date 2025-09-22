@@ -66,7 +66,7 @@ if(isset($_POST['update'])){
     <div class="slider hide-on-med-and-down">
       <ul class="slides">
         <li>
-          <img src="img/chef-writing.jpg" class="responsive-img" alt="">
+          <img src="img/chef_writing.jpg" class="responsive-img" alt="">
         </li>
       </ul>
     </div>

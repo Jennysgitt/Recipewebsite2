@@ -50,9 +50,7 @@ $primaryColor = $recipe['primary_color'];
       .gradient-bg{
             background: linear-gradient(to bottom, #ffffff, var(--primary-color));
         }
-    .gradient-bg{
-            background-color: var(--primary-color) !important;
-     }
+    
   </style>
 </head>
 <body>
@@ -72,7 +70,12 @@ $primaryColor = $recipe['primary_color'];
       <li class="collection-item avatar valign-wrapper">
         <i class="circle primary-bg darken-4 small material-icons">message</i>
         <p class="font-bold"> <?php  echo($recipe['description'])?></p>
-        <i class="primary-text text-darken-4 material-icons right"><a href="update.php?recipe_id=<?php echo($recipe['recipe_id'])?>"></a>create</i>
+        <a href="update.php?recipe_id=<?php echo($recipe['recipe_id'])?>&recipe_name=?<?php echo($recipe['recipe_name'])?>">
+
+          <i class="primary-text text-darken-4 material-icons right">
+            create
+          </i>
+        </a>
       </li>
 
       <li class="collection-item avatar valign-wrapper">
@@ -95,7 +98,7 @@ $primaryColor = $recipe['primary_color'];
         <i class="material-icons tiny left">keyboard_arrow_left</i>
         <span>Back</span>
       </a>
-      <a class="btn btn-large btn-flat primary-text red darken-4" href="delete.php?recipe_id=<?php echo($recipe['recipe_id'])?>">
+      <a class="btn btn-large btn-flat white-text red darken-4" href="delete.php?recipe_id=<?php echo($recipe['recipe_id'])?>">
         <i class="material-icons tiny right">delete_forever</i>
         <span>Delete</span>
       </a>
@@ -103,9 +106,9 @@ $primaryColor = $recipe['primary_color'];
   </div>
   <br>
   <br>
-  <footer class="gradient-bg">
-            <div>
-                <div class="row">
+  <footer class="page-footer section gradient-bg">
+            <div class="container section">
+                <div class="row section">
                         <div class="col s12 m3 l3">
                             <h4 class="white-text text-darken-4">About</h4>
                             <ul>

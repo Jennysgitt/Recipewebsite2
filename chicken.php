@@ -35,7 +35,9 @@ $recipes = mysqli_fetch_all($send_query, MYSQLI_ASSOC);
 </head>
 <body>
   <div class="parallax-container">
-    <div class="parallax"><img src="img/chicken-main.jpg"></div>
+    <div class="parallax">
+      <img src="img/chicken-main.jpg">
+    </div>
   </div>
   
         <!-- chicken -->
@@ -52,7 +54,7 @@ $recipes = mysqli_fetch_all($send_query, MYSQLI_ASSOC);
                     <div class="col s12 m6 l4"> 
                         <div class="card medium hoverable">
                             <div class="card-image">
-                                <img src="img/chicken-main.jpg" class="responsive-img" alt="chicken">
+                                <img src="<?php echo $recipe['recipe_name'] ?>-main.jpg" class="responsive-img" alt="chicken">
                             </div>
                             <div class="card-content">
                                 <span class="card-title activator underline-text green-text text-darken-4">
