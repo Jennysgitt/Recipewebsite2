@@ -72,7 +72,7 @@ $primaryColor = $recipe['primary_color'];
       <li class="collection-item avatar valign-wrapper">
         <i class="circle primary-bg darken-4 small material-icons">message</i>
         <p class="font-bold"> <?php  echo($recipe['description'])?></p>
-        <i class="primary-text text-darken-4 material-icons right">create</i>
+        <i class="primary-text text-darken-4 material-icons right"><a href="update.php?recipe_id=<?php echo($recipe['recipe_id'])?>"></a>create</i>
       </li>
 
       <li class="collection-item avatar valign-wrapper">
